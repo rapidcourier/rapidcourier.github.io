@@ -1,32 +1,87 @@
-.App {
-  text-align: center;
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  height: 50vh;
+  /* background-color: #f5f5f5; */
+  background-image: url('https://images.pexels.com/photos/1013516/pexels-photo-1013516.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+header div {
+  width: 50%;
+  color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.menu p {
+  padding: 10px;
+}
+
+.menu p:hover {
+  color: #e0e0e0
+}
+
+.menu p:active {
+  color: #e0e0e0
+}
+
+h2 {
+  padding-left: 20px;
+}
+
+.services div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.services div p {
+  width: 25%;
+}
+
+
+.services p {
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: black;
+  height: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.footer p {
+  color: #424242;
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+@media only screen and (max-width: 700px) {
+  .services div {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .services div p {
+    width: 80%;
   }
 }
